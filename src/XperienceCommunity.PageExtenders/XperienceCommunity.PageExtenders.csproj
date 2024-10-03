@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>XperienceCommunity.PageExtenders</Title>
+        <Authors>Michael Eustace</Authors>
+        <Description>Provides an Admin UI page extender for Xperience by Kentico that displays the number of content items for each content type in the content type listing.</Description>
+        <Copyright>Michael Eustace</Copyright>
+        <PackageProjectUrl>https://github.com/michael419/xperience-community-page-extenders</PackageProjectUrl>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/michael419/xperience-community-page-extenders</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageTags>kentico xperience</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Kentico.Xperience.Admin" Version="29.5.2" />
+      <PackageReference Include="Kentico.Xperience.Core" Version="29.5.2" />
+	  <None Include="..\..\README.md" Pack="true" PackagePath="\"/>
+    </ItemGroup>
+
+</Project>
